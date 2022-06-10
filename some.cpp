@@ -12,11 +12,11 @@ void calculate(int m)
          << "\n";
     bool a;
     cin >> a;
-    if (a == true)
+    if (a)
     {
         cout << "The total price is :" << n;
     }
-    else if (a == false)
+    else
     {
         main();
     }
