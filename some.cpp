@@ -1,9 +1,9 @@
 #include <iostream>
 #include <vector>
 #include <string>
+using namespace std;
 
 int n;
-using namespace std;
 int main();
 void calculate(int m){
 n+=m;
