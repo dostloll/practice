@@ -1,0 +1,8 @@
+Basics of Vim.
+
+y->Yank!!
+Y->Yank the whole line.
+y+e->Yank something form the selected entity until there is a special char or a white space.
+d->Delete a single thing.
+D->Delete something after the selected entity.
+p->Paste.
