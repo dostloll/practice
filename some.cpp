@@ -68,7 +68,5 @@ int main(){
  } 
  else if(j==2){
   soup();
- }
-
-   
+ } 
 }
