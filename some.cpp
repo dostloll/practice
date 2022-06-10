@@ -4,6 +4,7 @@
 
 int n;
 
+
 void calculate(int m) {
     n += m;
     std::cout << "Are you done?" << "\n";
@@ -17,18 +18,7 @@ void calculate(int m) {
     }
 }
 
-void calculate(int m) {
-    n += m;
-    std::cout << "Are you done?" << "\n";
-    bool a;
-    std::cin >> a;
-    
-    if(a == true) {
-        std::cout<<"The total price is :" << n;
-    } else if(a == false) {
-        main();
-    }
-}
+
 
 void snacks(){
     int m, n;
@@ -59,24 +49,22 @@ void soup() {
         n = 150;
         calculate(n);
     } else if(m == 2) {
-        n = 210;
-        calculate(n);
+
+int main();
+void calculate(int m)
+{
+    n += m;
+    cout << "Are you done?"
+         << "\n";
+    bool a;
+    cin >> a;
+    if (a == true)
+    {
+        cout << "The total price is :" << n;
+    }
+    else if (a == false)
+    {
+        main();
     }
 }
 
-int main() {
-    int j;
-    
-    std::cout << "--------MENU---------" << "\n";
-    std::cout << "1.Snacks" << "\n"; 
-    std::cout << "2.Soup" << "\n";
-
-    std::cout << "Select :";
-    std::cin >> j;
-
-    if(j == 1) {
-        snacks();
-    } else if(j == 2) {
-        soup();
-    }   
-}
