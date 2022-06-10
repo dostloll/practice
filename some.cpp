@@ -4,7 +4,18 @@
 
 int n;
 
-int main();
+void calculate(int m) {
+    n += m;
+    std::cout << "Are you done?" << "\n";
+    bool a;
+    std::cin >> a;
+
+    if(a == true){
+        std::cout << "The total price is :" << n;
+    } else if(a == false){
+        main();
+    }
+}
 
 void calculate(int m) {
     n += m;
@@ -22,9 +33,10 @@ void calculate(int m) {
 void snacks(){
     int m, n;
     std::cout << "1.Lolipop\tRs200" << "\n";
-    std::cout<<"2.Chicken chilly\tRs300" << "\n\n\n";
-    std::cout<<"Enter your choice :";
-    cin >> m;
+    std::cout << "2.Chicken chilly\tRs300" << "\n\n\n";
+    std::cout << "Enter your choice :";
+    std::cin >> m;
+    
     if(m == 1) {
         n = 200;
         calculate(n);
